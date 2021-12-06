@@ -13,3 +13,4 @@ All `secret.py`-files are unavailable.
 - Day 32: sending wishes by email, `smptlib`
 - Day 33: check position of ISS, working with API
 - Day 34: GUI Quiz Game, `TKinter` and OOP
+- Day 35: Rain Alert, sending sms
