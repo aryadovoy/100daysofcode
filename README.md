@@ -15,3 +15,4 @@ All `secret.py`-files are unavailable.
 - **Day 34**: GUI Quiz Game, `TKinter` and OOP
 - **Day 35**: Rain Alert, sending sms by Twilio
 - **Day 36**: Trading Alert, working with API
+- **Day 37**: Habit Tracker by Pixela, `strftime`
