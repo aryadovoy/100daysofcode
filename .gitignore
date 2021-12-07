@@ -141,4 +141,5 @@ cython_debug/
 .vscode
 secret*
 t.ipynb
+data.json
 Pipfile*
