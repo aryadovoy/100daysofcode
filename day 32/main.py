@@ -12,14 +12,19 @@ import smtplib
 import datetime as dt
 import csv
 import random
-from secret import my_email, my_pass
+import sys
+import os
+
+sys.path.append(os.getcwd()) # for secret
+
+import secret as s
 
 
 def send_email():
     connection = smtplib.SMTP_SSL('smtp.yandex.ru', port=465)
-    connection.login(user=my_email, password=my_pass)
-    with open('letter_templates/letter_{}.txt'.format(random.randrange(1, 4))) as letter:
-        connection.sendmail(from_addr=my_email,
+    connection.login(user=s.my_email, password=s.my_email_pass)
+    with open('day 32/letter_templates/letter_{}.txt'.format(random.randrange(1, 4))) as letter:
+        connection.sendmail(from_addr=s.my_email,
                             to_addrs=row[1],
                             msg='Subject:Birthday!\n\n' + \
                                 str(''.join(letter.readlines())).replace('[NAME]', row[0]))
@@ -29,7 +34,7 @@ def send_email():
 now_month = str(dt.datetime.now().month)
 now_day = str(dt.datetime.now().day)
 
-with open('birthdays.csv', 'r') as csvfile:
+with open('day 32/birthdays.csv', 'r') as csvfile:
     bdays = csv.reader(csvfile, delimiter=',')
     for row in bdays:
         if row[3] == now_month and row[4] == now_day:

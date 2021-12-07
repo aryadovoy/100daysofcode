@@ -2,14 +2,19 @@ import requests
 import smtplib
 import datetime as dt
 import time
-from secret import api_key, my_email, my_pass
+import sys
+import os
+
+sys.path.append(os.getcwd()) # for secret
+
+import secret as s
 
 
 def send_email():
     connection = smtplib.SMTP_SSL('smtp.yandex.ru', port=465)
-    connection.login(user=my_email, password=my_pass)
-    connection.sendmail(from_addr=my_email,
-                        to_addrs=my_email,
+    connection.login(user=s.my_email, password=s.my_email_pass_pass)
+    connection.sendmail(from_addr=s.my_email,
+                        to_addrs=s.my_email,
                         msg='Subject:Look up!\n\nISS is here.')
     connection.close
 
@@ -25,7 +30,7 @@ city = 'Batumi'
 
 params = {
     'q': city,
-    'appid': api_key
+    'appid': s.owm_api_key
 }
 
 location = requests.get('http://api.openweathermap.org/geo/1.0/direct', params=params).json()

@@ -2,14 +2,11 @@
 
 I'm in [this course](https://www.udemy.com/course/100-days-of-code/).
 
-All `secret.py`-files are unavailable.
+Location of `secret.py` in root dir, fill it by your secrets.
 
 ## Log
 
 - **Day 1**: generator of band's name, text game
-
-…
-
 - **Day 32**: sending wishes by email, `smptlib`
 - **Day 33**: check position of ISS, working with API
 - **Day 34**: GUI Quiz Game, `TKinter` and OOP
