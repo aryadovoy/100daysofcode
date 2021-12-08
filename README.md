@@ -14,3 +14,4 @@ Location of `secret.py` in root dir, fill it by your secrets.
 - **Day 36**: Trading Alert, working with API
 - **Day 37**: Habit Tracker by Pixela, `strftime`
 - **Day 38**: Activity Tracker in Google Spreadsheets by Sheety, working with API
+- **Day 39**: Searching Cheap Flights by tequila.kiwi, OOP and working with API
