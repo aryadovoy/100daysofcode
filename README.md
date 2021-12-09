@@ -16,3 +16,5 @@ Location of `secret.py` in root dir, fill it by your secrets.
 - **Day 38**: Activity Tracker in Google Spreadsheets by Sheety, working with API
 - **Day 39**: Searching Cheap Flights by tequila.kiwi, OOP and working with API
 - **Day 40**: Flight Club, the same as previous — added some features
+- **Day 41**: HTML Basics, pretty simple — don't check it
+- **Day 42**: HTML Basics, the same as previous
